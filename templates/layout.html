@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Malik Piara</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <meta charset="utf-8">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113474050-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113474050-1');
+    </script>
+    </head>
+    <body>
+        <p>Sidebar</p>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
